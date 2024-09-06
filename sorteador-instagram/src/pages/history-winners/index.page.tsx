@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Box, Flex, Heading, Text, VStack } from '@chakra-ui/react';
-import { Funnel } from '@phosphor-icons/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Sidebar } from '@/components/sidebar'; // Certifique-se de que o caminho esteja correto
 
 interface Raffle {
   id: string;
@@ -34,47 +34,11 @@ export default function HistoricoGanhadores() {
   return (
     <Flex h="100vh" bg="#0b0f18">
       {/* Sidebar */}
-      <Box
-        as="aside"
-        h="100%"
-        w="64"
-        bg="#191e24"
-        p="5"
-        borderRadius="8px"
-        display="flex"
-        flexDirection="column"
-        alignItems="start"
-        color="white"
-      >
-        <Flex alignItems="center" mb="5" color="white">
-          <Funnel size={32} />
-          <Text ml="2" fontSize="2xl" fontWeight="bold">
-            <a href="/home-page">Sort App</a>
-          </Text>
-        </Flex>
-
-        <VStack spacing="4" align="start">
-          <Text as="a" href="/history-raffle" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Histórico de Sorteios
-          </Text>
-          <Text as="a" href="/history-winners" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Histórico de Ganhadores
-          </Text>
-          <Text as="a" href="/account" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Minha Conta
-          </Text>
-          <Text as="a" href="/terms-service" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Termos de Serviço
-          </Text>
-          <Text as="a" href="/raffle-maker" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Sorteadores
-          </Text>
-        </VStack>
-      </Box>
+      <Sidebar />
 
       {/* Conteúdo principal */}
-      <Flex flex="1" justifyContent="center" alignItems="center">
-        <Box w="full" maxW="4xl" p="5">
+      <Flex flex="1" justifyContent="center" alignItems="center" p="5">
+        <Box w="full" maxW="4xl">
           <Heading as="h1" size="xl" mb="5" textAlign="center" color="white">
             Histórico de Ganhadores
           </Heading>

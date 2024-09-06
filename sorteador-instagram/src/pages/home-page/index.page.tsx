@@ -1,48 +1,13 @@
-import { Funnel } from '@phosphor-icons/react';
-import { Box, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text } from '@chakra-ui/react';
+import { Sidebar } from '@/components/sidebar';
 
 export default function Home() {
   return (
-    <Flex h="100%" bg="#0b0f18">
-      <Box
-        as="aside"
-        h="97vh"
-        w="64"
-        mt="2"
-        ml="2"
-        bg="#191e24"
-        p="5"
-        borderRadius="8px"
-        display="flex"
-        flexDirection="column"
-        alignItems="start"
-        color="white"
-      >
-        <Flex alignItems="center" mb="5" color="white">
-          <Funnel size={32} />
-          <Text ml="2" fontSize="2xl" fontWeight="bold">
-            <a href="/home-page">Sort App</a>
-          </Text>
-        </Flex>
+    <Flex h="100vh" bg="#0b0f18">
+      {/* Sidebar */}
+      <Sidebar />
 
-        <VStack spacing="4" align="start">
-          <Text as="a" href="/history-raffle" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Historico de Sorteios
-          </Text>
-          <Text as="a" href="/history-winners" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Historico de Ganhadores
-          </Text>
-          <Text as="a" href="/account" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Minha Conta
-          </Text>
-          <Text as="a" href="/terms-service" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Termos de Serviço
-          </Text>
-          <Text as="a" href="/raffle-maker" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
-            Sorteadores
-          </Text>
-        </VStack>
-      </Box>
+      {/* Main Content */}
       <Flex flexGrow="1" p="10" flexDirection="column" gap="5">
         <Box
           bg="#122233"
@@ -69,7 +34,7 @@ export default function Home() {
           color="white"
         >
           <Heading as="h2" fontSize="xl" mb="2">
-            Historico de Sorteios
+            Histórico de Sorteios
           </Heading>
           <Text fontSize="lg" color="#bbbbbb" mb="4">
             Veja todos os sorteios realizados
@@ -86,7 +51,7 @@ export default function Home() {
           color="white"
         >
           <Heading as="h2" fontSize="xl" mb="2">
-            Historico de Ganhadores
+            Histórico de Ganhadores
           </Heading>
           <Text fontSize="lg" color="#bbbbbb" mb="4">
             Veja todos os ganhadores dos sorteios
