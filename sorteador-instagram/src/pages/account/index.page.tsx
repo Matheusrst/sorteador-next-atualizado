@@ -47,8 +47,8 @@ const AccountPage = ({ user }: UserProps) => {
           </Text>
         </Flex>
         <Stack spacing="15px" align="start">
-          <Text as="a" href="#" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Historico de Sorteios</Text>
-          <Text as="a" href="#" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Historico de Ganhadores</Text>
+          <Text as="a" href="/history-raffle" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Historico de Sorteios</Text>
+          <Text as="a" href="/history-winners" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Historico de Ganhadores</Text>
           <Text as="a" href="/terms-service" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Termos de Serviço</Text>
           <Text as="a" href="/raffle-maker" className="text-white text-base mb-4 block p-2 cursor-pointer hover:bg-[#2c3e50] rounded-md">Sorteadores</Text>
         </Stack>

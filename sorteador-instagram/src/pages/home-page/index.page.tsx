@@ -26,10 +26,10 @@ export default function Home() {
         </Flex>
 
         <VStack spacing="4" align="start">
-          <Text as="a" href="#" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
+          <Text as="a" href="/history-raffle" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
             Historico de Sorteios
           </Text>
-          <Text as="a" href="#" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
+          <Text as="a" href="/history-winners" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
             Historico de Ganhadores
           </Text>
           <Text as="a" href="/account" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
@@ -74,7 +74,7 @@ export default function Home() {
           <Text fontSize="lg" color="#bbbbbb" mb="4">
             Veja todos os sorteios realizados
           </Text>
-          <Text as="a" href="#" fontSize="sm" fontWeight="bold" color="#bbbbbb" _hover={{ color: 'white' }}>
+          <Text as="a" href="/history-raffle" fontSize="sm" fontWeight="bold" color="#bbbbbb" _hover={{ color: 'white' }}>
             Ver Todos &rarr;
           </Text>
         </Box>
@@ -91,7 +91,7 @@ export default function Home() {
           <Text fontSize="lg" color="#bbbbbb" mb="4">
             Veja todos os ganhadores dos sorteios
           </Text>
-          <Text as="a" href="#" fontSize="sm" fontWeight="bold" color="#bbbbbb" _hover={{ color: 'white' }}>
+          <Text as="a" href="/history-winners" fontSize="sm" fontWeight="bold" color="#bbbbbb" _hover={{ color: 'white' }}>
             Ver Todos &rarr;
           </Text>
         </Box>

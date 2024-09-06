@@ -25,10 +25,10 @@ export default function TermosDeUso() {
           </Text>
         </Flex>
         <VStack spacing="4" align="start">
-          <Text as="a" href="#" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
+          <Text as="a" href="/history-raffle" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
             Historico de Sorteios
           </Text>
-          <Text as="a" href="#" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
+          <Text as="a" href="/history-winners" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
             Historico de Ganhadores
           </Text>
           <Text as="a" href="/account" className="block p-2 rounded hover:bg-[#2c3e50] focus:bg-[#34495e]">
