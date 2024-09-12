@@ -1,5 +1,5 @@
 import { Card, CardHeader } from "@chakra-ui/react";
-import { Funnel, UserCircleGear, Article } from "@phosphor-icons/react";
+import { Funnel, UserCircleGear, Article, CheckFat } from "@phosphor-icons/react";
 import Link from "next/link";
 
 export function Sidebar() {
@@ -7,13 +7,15 @@ export function Sidebar() {
     {
       name: "Histórico de Sorteios",
       link: "/history-raffle",
-      icon: <Funnel size={32} />,
+      icon: <CheckFat size={32} />,
     },
+    /** 
     {
       name: "Histórico de Ganhadores",
       link: "/history-winners",
       icon: <Funnel size={32} />,
     },
+    */
     {
       name: "Minha Conta",
       link: "/account",
