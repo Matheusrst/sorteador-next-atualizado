@@ -1,5 +1,5 @@
 import { Card, CardHeader } from "@chakra-ui/react";
-import { Funnel, UserCircleGear } from "@phosphor-icons/react";
+import { Funnel, UserCircleGear, Article } from "@phosphor-icons/react";
 import Link from "next/link";
 
 export function Sidebar() {
@@ -22,7 +22,7 @@ export function Sidebar() {
     {
       name: "Termos de Serviço",
       link: "/terms-service",
-      icon: <UserCircleGear size={32} />,
+      icon: <Article size={32} />,
     },
     {
       name: "Sorteadores",
